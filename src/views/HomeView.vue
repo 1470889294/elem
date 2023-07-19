@@ -45,7 +45,7 @@ export default {
     
   },
   async mounted(){
-    this.$router.push("/city")
+    // this.$router.push("/city")
     const PATH = "https://elm.cangdu.org/img/";
     const PATH2 = "https://fuss10.elemecdn.com";
     let res = await this.$http("goodsList.json")
