@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <input class="inp" type="text" :value="msg">
     <headerComp></headerComp>
     <div class="banner_container">
       <div class="banner_box">
@@ -39,6 +40,7 @@ export default {
       list:[],
       swiperList:[],
       activeeee:0,
+      msg:"玫瑰"
     }
   },
   methods:{
@@ -65,6 +67,11 @@ export default {
 
 </script>
 <style lang="scss" scoped>
+.inp{
+  width:10rem;
+  height:10rem;
+  font-size:2rem;
+}
 .banner_container{
   width:10rem;
   height:4.5rem;
