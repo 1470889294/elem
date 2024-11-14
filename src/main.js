@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import axios from "axios";
 import "amfe-flexible"
+// 111
 import { Tabbar, TabbarItem,Rate,NavBar,Tab,Tabs,Sidebar,SidebarItem,Form,Field,Button,Toast,Tag } from 'vant';
 import "vant/lib/index.css"
 Vue.config.productionTip = false

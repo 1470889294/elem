@@ -111,7 +111,7 @@
         </div>
     </div>
 </template>
-
+<!-- https://c6.y.qq.com/base/fcgi-bin/u?__=N2mkEEla54Ns -->
 <script>
 import BScroll from "better-scroll";
 import headerTitleComp from '@/components/headerTitleComp.vue';
@@ -164,6 +164,8 @@ import headerTitleComp from '@/components/headerTitleComp.vue';
         },
         async mounted(){
             let cId = sessionStorage.getItem("id")
+            console.log(cId);
+            
             this.item = JSON.parse(sessionStorage.getItem("item"))
             let res = await this.$http("https://elm.cangdu.org/shopping/v2/menu?restaurant_id="+cId)
             this.l_list = res.data;
